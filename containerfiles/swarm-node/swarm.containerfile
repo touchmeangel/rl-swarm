@@ -43,10 +43,10 @@ RUN . "$NVM_DIR/nvm.sh" && nvm install ${NODE_VERSION} && \
 COPY ./containerfiles/swarm-node/versions.json ./versions.json
 
 COPY ./containerfiles/swarm-node/setup_python.sh ./setup_python.sh
-RUN ./setup_python.sh
+RUN bash ./setup_python.sh
 
 COPY ./containerfiles/swarm-node/install_pip.sh ./install_pip.sh
-RUN ./install_pip.sh
+RUN bash ./install_pip.sh
 
 ENV PATH="/home/gensyn/.pyenv/shims:/home/gensyn/.pyenv/bin:$NVM_DIR/versions/node/v${NODE_VERSION}/bin/:${PATH}"
 
