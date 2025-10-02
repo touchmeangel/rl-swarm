@@ -87,11 +87,11 @@ trap errnotify ERR
 
 echo -e "\033[38;5;224m"
 cat << "EOF"
-    ██████  ██            ███████ ██     ██  █████  ██████  ███    ███
-    ██   ██ ██            ██      ██     ██ ██   ██ ██   ██ ████  ████
-    ██████  ██      █████ ███████ ██  █  ██ ███████ ██████  ██ ████ ██
-    ██   ██ ██                 ██ ██ ███ ██ ██   ██ ██   ██ ██  ██  ██
-    ██   ██ ███████       ███████  ███ ███  ██   ██ ██   ██ ██      ██
+    в–€в–€в–€в–€в–€в–€  в–€в–€            в–€в–€в–€в–€в–€в–€в–€ в–€в–€     в–€в–€  в–€в–€в–€в–€в–€  в–€в–€в–€в–€в–€в–€  в–€в–€в–€    в–€в–€в–€
+    в–€в–€   в–€в–€ в–€в–€            в–€в–€      в–€в–€     в–€в–€ в–€в–€   в–€в–€ в–€в–€   в–€в–€ в–€в–€в–€в–€  в–€в–€в–€в–€
+    в–€в–€в–€в–€в–€в–€  в–€в–€      в–€в–€в–€в–€в–€ в–€в–€в–€в–€в–€в–€в–€ в–€в–€  в–€  в–€в–€ в–€в–€в–€в–€в–€в–€в–€ в–€в–€в–€в–€в–€в–€  в–€в–€ в–€в–€в–€в–€ в–€в–€
+    в–€в–€   в–€в–€ в–€в–€                 в–€в–€ в–€в–€ в–€в–€в–€ в–€в–€ в–€в–€   в–€в–€ в–€в–€   в–€в–€ в–€в–€  в–€в–€  в–€в–€
+    в–€в–€   в–€в–€ в–€в–€в–€в–€в–€в–€в–€       в–€в–€в–€в–€в–€в–€в–€  в–€в–€в–€ в–€в–€в–€  в–€в–€   в–€в–€ в–€в–€   в–€в–€ в–€в–€      в–€в–€
 
     From Gensyn
 
@@ -128,7 +128,7 @@ if [ "$CONNECT_TO_TESTNET" = true ]; then
             echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
             sudo apt update && sudo apt install -y yarn
         else
-            echo "Yarn not found. Installing Yarn globally with npm (no profile edits)…"
+            echo "Yarn not found. Installing Yarn globally with npm (no profile edits)вЂ¦"
             # This lands in $NVM_DIR/versions/node/<ver>/bin which is already on PATH
             npm install -g --silent yarn
         fi
